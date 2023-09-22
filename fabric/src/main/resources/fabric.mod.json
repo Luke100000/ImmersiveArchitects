@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "immersive_architects",
+  "version": "${version}",
+  "name": "Immersive Architects",
+  "description": "Various architectural features.",
+  "authors": [
+    "Luke100000"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/immersiveArchitects",
+    "sources": "https://github.com/Luke100000/immersiveArchitects",
+    "issues": "https://github.com/Luke100000/immersiveArchitects/issues"
+  },
+  "license": "GNU",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "immersive_architects.fabric.CommonFabric"
+    ],
+    "client": [
+      "immersive_architects.fabric.ClientFabric"
+    ]
+  },
+  "mixins": [
+    "immersive_architects.mixin.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "java": ">=8",
+    "fabric-api-base": ">=0.1.0"
+  }
+}
